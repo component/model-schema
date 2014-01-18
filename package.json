@@ -1,0 +1,6 @@
+{
+  "name": "hades-schema",
+  "description": "A plugin that creates Hades model attributes from a schema.",
+  "version": "0.0.0",
+  "license": "MIT"
+}
