@@ -1,18 +1,18 @@
 
-# hades-schema
+# model-schema
 
-  A plugin that creates Hades model attributes from a schema.
+  A plugin that creates a model's attributes from a schema.
 
 ## Installation
 
-    $ component install segmentio/hades-schema
-    $ npm install hades-schema
+    $ component install segmentio/model-schema
+    $ npm install model-schema
 
 ## Example
 
 ```js
-var hades = require('hades');
-var schema = require('hades-schema');
+var model = require('model');
+var schema = require('model-schema');
 
 var json = {
   id: {
@@ -26,7 +26,7 @@ var json = {
   }
 };
 
-var User = hades()
+var User = model()
   .use(schema(json));
 ```
 

@@ -3,14 +3,14 @@ var assert = require('assert');
 var noop = function(){};
 
 try {
-  var schema = require('hades-schema');
-  var hades = require('hades');
+  var schema = require('model-schema');
+  var model = require('model');
 } catch (e) {
   var schema = require('..');
-  var hades = require('../../hades');
+  var model = require('../../model');
 }
 
-describe('hades-schema', function () {
+describe('model-schema', function () {
 
   var json = {
     id: {
@@ -25,7 +25,7 @@ describe('hades-schema', function () {
   };
 
   it('should work', function () {
-    var Model = hades().use(schema(json));
+    var Model = model('user').use(schema(json));
     assert.equal(Model.attrs.id, json.id);
     assert.equal(Model.attrs.name, json.name);
   });
