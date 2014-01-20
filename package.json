@@ -1,6 +1,6 @@
 {
   "name": "model-schema",
   "description": "A plugin that creates a model's attributes from a schema.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT"
 }
